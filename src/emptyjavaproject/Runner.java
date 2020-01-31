@@ -1,5 +1,6 @@
 /*
  * Time Est: 3 hours
+* real time: approx 4 1/2 hours
  */
 package emptyjavaproject;
 
