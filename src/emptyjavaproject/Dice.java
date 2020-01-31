@@ -8,13 +8,19 @@ package emptyjavaproject;
  * @author mercy.daniels
  */
 public class Dice {
-  private int side;
-  
-  public int roll(){
-    int[] diceSides = {1,2,3,4,5,6};
-    int i = (int) (Math.random()*5) + 1;
+    //default to six
+   private int side = 6;
     
-      return 1;
-      
-  }
+    public Dice(int sideNumber){
+       side = sideNumber; 
+    }
+   //randomizes dice sides
+    public int roll() {
+   
+    return (int)((Math.random()* side) + 1);
+    }
+   //used for calculations
+ public int getFaces() {
+       return side;
+    }
 }
